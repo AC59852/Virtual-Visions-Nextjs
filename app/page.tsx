@@ -37,8 +37,8 @@ export default async function Home() {
       <HomeHeader name="Austin" profilePicture="/profile-pic.jpg" />
       <section className="w-full">
         {posts?.map((post: Post) => (
-          <PostComponent key={post.id} post={post} user={post.users} />
-        ))}
+        <PostComponent key={post.id} post={post} />
+      ))}
       </section>
     </main>
   );

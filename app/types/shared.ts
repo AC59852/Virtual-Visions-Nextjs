@@ -33,3 +33,12 @@ interface LoggedInUser {
     providers: string[];
   };
 }
+
+interface PostComponentProps {
+  post: Post;
+  user: {
+    id: string;
+    user_name: string;
+    profile_pic: string;
+  };
+}
